@@ -1,0 +1,106 @@
+# Task. No. 1 ============>>
+print('<<========== Task. No. 1 ==========>>')
+start = int(input('Enter a start Number:...'))
+end = int(input('Enter a Ending Number:..'))
+if end < start:
+    print('Please! Enter the start number more than end number.')
+elif end <= 1:
+    print('Your entered Number is not Prime')
+elif start < 1:
+        print('Please Enter Your start Number is large than 1 ')
+else:
+    print('Your Prime Number is:..')
+    for num in range(start, end, +1):
+        for i in range(2, num):
+            if (num % i) == 0:
+                break
+        else:
+            print(num, end='  ')
+
+
+
+
+# Task. No. 2: Display the first 7 multiples of 7 using a for loop
+print('\n\n<<========== Task. No. 2 ==========>>')
+mul = 0
+print('\nThe first 7 Multiples of 7 is: ')
+for i in range(1, 8):
+    mul = 7 * i
+    print(mul, end='   ')
+print('')
+
+
+
+
+
+# Task. No. 3: Python Program to reverse the Numbers
+print('\n\n<<========== Task. No. 3 ==========>>')
+
+num = int(input('Enter your Numbers:...'))
+rev = 0
+while num > 0:
+    rev = (rev * 10) + num % 10
+    num = num // 10
+print('\n***************************')
+print('\nReverse Number is:... ', rev)
+
+
+
+
+
+
+# Task. No. 4: Break, Continue & Exit Statement
+print('\n\n<<========== Task. No. 4 ==========>>')
+print('1 ********Break Statement********')
+
+# Use break to stop the loop early
+for i in range(1, 11):
+    if i == 6:
+        break
+    print(i)
+print("Loop terminated early")
+
+print('')
+# Use continue to skip a numbers
+print('\n2 ********Continue Statement********')
+
+for i in range(1, 8):
+    if i == 5:
+        continue
+    print(i, end='  ')
+print("Loop completed, but skip a Number.")
+
+print('')
+# Use exit() to terminate the program
+print('\n3 ********exit Statement********')
+for i in range(1, 11):
+    if i == 5:
+        exit("Error: i cannot be 5")
+    print(i, end='  ')
+print("Loop completed")
+
+
+
+
+
+# Task. No. 5:
+print('\n\n<<========== Task. No. 5 ==========>>')
+
+count = 0
+print('Program. No. 1:')
+while True:
+    count += 1
+    print(count, end='  ')
+    if count == 10:
+        break
+print('\n')
+
+i = 1
+print('Program. No. 2:')
+while True:
+    print(i, end='  ')
+    i += 1
+    if i == 11:
+        break
+
+
